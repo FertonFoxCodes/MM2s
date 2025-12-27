@@ -5,17 +5,17 @@ local library
 local Iris
 
 if httpget then
-	Octree = loadstring(httpget("https://raw.githubusercontent.com/Sleitnick/rbxts-octo-tree/main/src/init.lua", true))()
-	library = loadstring(httpget("https://raw.githubusercontent.com/Zyn-ic/MM2-AutoFarm/refs/heads/main/UI-Library/XSX.lua", true))()
-	Iris = loadstring(httpget("https://raw.githubusercontent.com/x0581/Iris-Exploit-Bundle/2.0.4/bundle.lua"))().Init(game.CoreGui)
+	Octree = loadstring(httpget("https://raw.githubusercontent.com/FertonFoxCodes/MM2s/refs/heads/main/octree", true))()
+	library = loadstring(httpget("https://raw.githubusercontent.com/FertonFoxCodes/MM2s/refs/heads/main/ui", true))()
+	Iris = loadstring(httpget("https://raw.githubusercontent.com/FertonFoxCodes/MM2s/refs/heads/main/iris"))().Init(game.CoreGui)
 else
 	game:GetService("StarterGui"):SetCore("SendNotification", { Title = "Using Old Method", Text = "using discontinued 'game:HttpGet'", Duration = 4 })
-	Octree = loadstring(game:HttpGet("https://raw.githubusercontent.com/Sleitnick/rbxts-octo-tree/main/src/init.lua", true))()
-	library = loadstring(game:HttpGet("https://raw.githubusercontent.com/Zyn-ic/MM2-AutoFarm/refs/heads/main/UI-Library/XSX.lua", true))()
-	Iris = loadstring(game:HttpGet("https://raw.githubusercontent.com/x0581/Iris-Exploit-Bundle/2.0.4/bundle.lua"))().Init(game.CoreGui)
+	Octree = loadstring(game:HttpGet("https://raw.githubusercontent.com/FertonFoxCodes/MM2s/refs/heads/main/octree", true))()
+	library = loadstring(game:HttpGet("https://raw.githubusercontent.com/FertonFoxCodes/MM2s/refs/heads/main/ui", true))()
+	Iris = loadstring(game:HttpGet("https://raw.githubusercontent.com/FertonFoxCodes/MM2s/refs/heads/main/iris"))().Init(game.CoreGui)
 end
 
---local WayPointManager = loadstring(httpget("https://raw.githubusercontent.com/Zyn-ic/MM2-AutoFarm/refs/heads/main/Iris-Functions/WayPointManager", true))()
+--local WayPointManager = loadstring(httpget("https://raw.githubusercontent.com/FertonFoxCodes/MM2s/refs/heads/main/waypoint", true))()
 
 local Notif = library:InitNotifications()
 library.rank = "developer"
