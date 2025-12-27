@@ -1218,7 +1218,7 @@ rt.start = coroutine.create(collectCoins)
 ------------------------------------------------------------------------------------------------
 
 
-library.title = "Zynic's MM2 HUB 🎄"
+library.title = "Ferton's MM2 HUB 🎄"
 if library.rank ~= "developer" then library:Introduction(); task.wait(1) end
 
 
@@ -1309,7 +1309,7 @@ Tab1:NewLabel("remove UI HUB and its CONNECTIONS", "center")
 ------------------------------------AUTO FARM TAB--------------------------------------------------
 ---------------------------------------------------------------------------------------------------
 
-Tab2:NewSection("Zynic's Auto Farm Settings")
+Tab2:NewSection("Ferton's Auto Farm Settings")
 
 Tab2:NewToggle("Uninterrupted Mode", rt.Uninterrupted, function(value)
     local vers = value and "on" or "off"
@@ -1347,16 +1347,16 @@ Tab2:NewSection("Auto Farm Section")
 
 local AutoFarm 
 local AutoFarmValueChanged = false 
-AutoFarm = Tab2:NewToggle("Zynic AutoFarm", false, function(value)
+AutoFarm = Tab2:NewToggle("Ferton's AutoFarm", false, function(value)
     local vers = value and "on" or "off"
 
     if AutoFarmValueChanged then AutoFarmValueChanged = not AutoFarmValueChanged return end
     if not ToggleAutoFarm(value) then AutoFarmValueChanged = true; AutoFarm:Set(false) end
 
     
-    Notif:Notify("Zynic AutoFarm is now " .. vers, 1, "success")
+    Notif:Notify("Ferton's AutoFarm is now " .. vers, 1, "success")
 end)
-Tab2:NewLabel("this is the built in autofarm maybe by Zynic [Recommended]", "center")
+Tab2:NewLabel("this is the built in autofarm maybe by FertonFox [Recommended]", "center")
 Tab2:NewLabel("", "center")
 
 
@@ -1610,7 +1610,7 @@ end)
 ---------------------------------------------------------------------------------------------------
 
 Tab5:NewSection("Creators:")
-Tab5:NewLabel("Zynic", "left")
+Tab5:NewLabel("Ferton", "left")
 Tab5:NewLabel("", "center")
 
 Tab5:NewSection("Tools I used:", "left")
@@ -1624,5 +1624,5 @@ Tab5:NewLabel("Infinite Yield & Dark Dex Devs", "left")
 Tab5:NewLabel("Swift Executor Devs", "left")
 
 
-Notif:Notify("Loaded zynic's mm2 hub", 2, "success")
+Notif:Notify("Loaded Ferton's mm2 hub", 2, "success")
 library:Watermark("xsx ui lib | v" .. library.version ..  " | " .. library:GetUsername() .. " | rank: " .. library.rank)
